@@ -4,9 +4,9 @@ import { RepositoryItem } from "./RepositoryItem";
 import "../styles/repositories.scss";
 
 interface Repository {
-    name: string;
-    description: string;
-    html_url: string;
+    name: string,
+    description: string,
+    html_url: string,
 }
 
 export function RepositoryList() {
@@ -23,7 +23,7 @@ export function RepositoryList() {
             <h1>Lista de Repositorios Github</h1>
 
             <ul>
-                {repositories.map(repository => {
+                {repositories.map((repository: { name: any; description?: string; html_url?: string; }) => {
                     return <RepositoryItem key={repository.name} repository={repository} />
                 })}
             </ul>
