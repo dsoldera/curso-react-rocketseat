@@ -1,4 +1,3 @@
-
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
@@ -12,8 +11,7 @@ export const GlobalStyle = createGlobalStyle`
         --text-body: #969CB3;
         --background: #f0f2f5;
         --shape: #FFFFFF;
-
-        --green: 
+        --activeColor: #33CC95;
     }
 
     * {
@@ -87,4 +85,4 @@ export const GlobalStyle = createGlobalStyle`
         filter: brightness(0.8);
         }
     }
-`
+`;
