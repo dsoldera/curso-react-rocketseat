@@ -1,7 +1,7 @@
-import { darken, transparentize } from 'polished';
-import styled from 'styled-components';
+import { darken, transparentize } from "polished";
+import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.form`
   h2 {
     color: var(--text-title);
     font-size: 1.5rem;
@@ -28,7 +28,7 @@ export const Container = styled.div`
     }
   }
 
-  button[type='submit'] {
+  button[type="submit"] {
     width: 100%;
     padding: 0 1.5rem;
     height: 4rem;
@@ -56,13 +56,13 @@ export const TransactionTypeContainer = styled.div`
 `;
 
 const colors = {
-  green: '#33CC95',
-  red: '#E52E40',
+  green: "#33CC95",
+  red: "#E52E40",
 };
 
 interface RadioBoxProps {
   isActive: boolean;
-  activeColor: 'green' | 'red';
+  activeColor: "green" | "red";
 }
 
 export const RadioBox = styled.button<RadioBoxProps>`
@@ -73,13 +73,13 @@ export const RadioBox = styled.button<RadioBoxProps>`
   background: ${(props: RadioBoxProps) =>
     props.isActive
       ? transparentize(0.9, colors[props.activeColor])
-      : 'transparent'};
+      : "transparent"};
   display: flex;
   align-items: center;
   justify-content: center;
 
   &:hover {
-    border-color: ${darken(0.1, '#d7d7d7')};
+    border-color: ${darken(0.1, "#d7d7d7")};
   }
 
   img {
