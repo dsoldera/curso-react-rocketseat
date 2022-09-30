@@ -47,3 +47,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 Github
 https://github.com/Welber33/dtmoney_ignite/
+
+## Runs
+### Build Frontend
+```yarn start```
